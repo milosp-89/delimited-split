@@ -2,8 +2,8 @@
 -- this is useful when one entry/row of data has mutluple values stacked in one column, for repeated answers
 -- the function will create 5 rows for the same id if detected values are 5 and so on...
 
-use [xxx]
-go;
+use [xxx];
+go
 
 create function [dbo].[delimitedsplit]
         (@pstring varchar(8000), @pdelimiter char(1))
