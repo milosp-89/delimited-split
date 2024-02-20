@@ -1,13 +1,12 @@
--- custom function to split entries/rows intro the multiple rows based on values, delimited with commas
--- this is useful when one entry/row of data has mutluple values stacked in one column, for repeated answers
--- the function will create 5 rows for the same id if detected values are 5 and so on...
+-- custom function to split entries/rows into the multiple rows based on values, delimited with commas
+-- this is useful when one entry/row of data has multiple values stacked in one column
+-- the function will create 5 rows for the same id if detected values are 5 (val1,val2,val3,val4,val5)
 
 use [xxx];
 go
 
 create function [dbo].[delimitedsplit]
         (@pstring varchar(8000), @pdelimiter char(1))
--- do not use max data-types here!
 returns table with schemabinding as
  return
   with e1(n) as (
