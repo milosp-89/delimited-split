@@ -13,7 +13,4 @@ This SQL table - valued function assists in transforming repeated or delimited c
 - Row number 3 with submission_id "6662383" has three values delimited by commas from the "type" to "type_received" columns
 - After applying the DelimitedSplit function, row number 3 has been transformed into three additional rows because three values were present, separated by commas
 - The function will leave untouched non-delimited columns (normal columns without commas), and those columns will be duplicated until delimited columns, where each value will be transformed into each row
-- It is possible to have empty values like: val1,,val2,val3, and the function will transform one row into four additional rows, however, within a second row (",,"), there will be located an empty value
-  which can be replaced afterward with a NULL value if needed
-
-  ----
+- It is possible to have empty values like: val1,,val2,val3, and the function will transform one row into four additional rows, however, within a second row (",,"), there will be located an empty value which can be replaced afterward with a NULL value if needed
