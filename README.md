@@ -8,3 +8,10 @@ Steps:
 
 # Screenshot:
 ![2024-02-22 10_17_36-Window](https://github.com/milosp-89/delimiter_split_script/assets/155644532/a6dbe46b-0b52-4440-bb5a-6b96c4380999)
+
+# Summary:
+- Row number 3 with submission_id "6662383" has three values delimited by comma from "type" to "type_received" columns
+- After applying DelimitedSplit function row number 4 has been tranformed within 3 add rows, because 3 values were present 
+  separated by comma
+- Function will leave untouched non delimited columns, those columns will be duplicated until delimited columns where each 
+  value will be transformed to each row
