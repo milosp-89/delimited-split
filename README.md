@@ -2,7 +2,7 @@
 
 SQL function will help to transform repeated/delimited columns into the rows based on a number of values/commas in each cell
 
-Steps:
+# Steps:
 - Create the function
 - Apply the function only on delimited columns
 
