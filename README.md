@@ -7,7 +7,7 @@ This SQL table - valued function assists in transforming repeated or delimited c
 - Apply the function only to delimited columns, i.e., those columns separated by values with commas
 
 # Screenshot:
-![2024-02-22 10_17_36-Window](https://github.com/milosp-89/delimiter_split_script/assets/155644532/a6dbe46b-0b52-4440-bb5a-6b96c4380999)
+![2024-02-22 10_17_36-Window](https://github.com/milosp-89/delimited_split/assets/155644532/721d699e-4539-46ca-a4b5-d53aed4993db)
 
 # Summary:
 - Row number 3 with submission_id "6662383" has three values delimited by commas from the "type" to "type_received" columns
