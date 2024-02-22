@@ -11,7 +11,12 @@ SQL function will help to transform repeated/delimited columns into the rows bas
 
 # Summary:
 - Row number 3 with submission_id "6662383" has three values delimited by comma from "type" to "type_received" columns
-- After applying DelimitedSplit function row number 4 has been tranformed within 3 add rows, because 3 values were present 
+- After applying DelimitedSplit function row number 3 has been tranformed within 3 additional rows, because 3 values were present 
   separated by comma
-- Function will leave untouched non delimited columns, those columns will be duplicated until delimited columns where each 
+- Function will leave untouched non delimited columns (normal columns without commas) and those columns will be duplicated until
+  delimited columns, where each 
   value will be transformed to each row
+- It is possible to have empty values like: val1,,val2,val3 and the function will transform one rows into the 4 additional rows
+  but within 2 row (",,") there will be located empty value which can be replaced afterwards with NULL value if needed
+
+  --
