@@ -1,5 +1,6 @@
 # SQL Table - valued custom function: DelimitedSplit
 
+# About:
 This SQL table - valued function assists in transforming repeated or delimited columns into rows based on the number of values or commas in each cell
 
 # Steps:
